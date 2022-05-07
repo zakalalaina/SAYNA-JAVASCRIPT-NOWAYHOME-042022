@@ -1,0 +1,243 @@
+/* Pour la police spécial */
+
+@font-face {
+    font-family: 'Font1';
+    src: url('../css/Far_From_Homecoming_500.otf') format('opentype');
+}
+
+.navhome {
+    background-color: #B11313;
+}
+
+
+/* pour navbar dans adversaire qui est jaune */
+
+.navedv {
+    background-color: #F1C530;
+}
+
+
+/* pour navbar de heros qui est bleue */
+
+.navheros {
+    background-color: #114C92;
+}
+
+
+/* corps de home */
+
+.disparait {
+    display: none;
+}
+
+
+/* corps home principale avex image de fond */
+
+.principale_mobile {
+    display: none;
+}
+
+.spide_font {
+    font-family: 'Font1';
+}
+
+.to_reverse button {
+    padding: 10px 20px;
+    border: solid 2px white;
+    border-radius: 30px;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+
+/* corps home avec 3 conteneur */
+
+.conteneur_image {
+    padding: 20px 5%;
+    font-size: 15px;
+}
+
+.conteneur_image button {
+    background-color: white;
+    color: #B11313;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+
+/* pour la partie avec couleur de fond bleue */
+
+
+/* pour le formulaire d'inscription tenue desktop */
+
+.bleue {
+    background-color: #114C92;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 100px 0;
+}
+
+.inscription_tenue div {
+    padding: 10px 0;
+}
+
+.inscription_tenue input {
+    width: 80%;
+    border: solid 0.5 black;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+
+/* pour la partie de la newsletter */
+
+
+/* pour les formulaire d'inscription à la newsletter */
+
+.rouge {
+    background-position-x: right;
+    padding: 40px 15%;
+}
+
+.rouge div {
+    padding: 20px 0;
+}
+
+
+/* pour style de heros */
+
+
+/* pour l'image superposé */
+
+.img1sur1 {
+    padding-top: 50px;
+}
+
+.img2sur1 {
+    margin-top: -100px;
+    padding-left: 200px;
+}
+
+
+/* pour image rond */
+
+.apparait {
+    display: none;
+}
+
+.imgrond2 {
+    display: none;
+}
+
+
+/* pour le style du footer sur desktop */
+
+footer {
+    padding: 50px 3% 10px 3%;
+    text-align: center;
+}
+
+.mobile_sayna {
+    display: none;
+}
+
+.rs_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.rs_footer>p {
+    background-color: #B11313;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 0 2%;
+}
+
+
+/* pour le style en responsive */
+
+
+/* responsive navbar */
+
+@media screen and (max-width:960px) {
+    /* pour les header */
+    .navbar {
+        display: none;
+    }
+    /* pour responsive de home */
+    /* pour principale lien saynaXmarvel */
+    .juste_espace {
+        display: none;
+    }
+    .principale_mobile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .disparait {
+        display: block;
+    }
+    /* pour conteneur 3 image */
+    .contenu_corps {
+        text-align: center;
+    }
+    .conteneur_image {
+        padding: 50px 10%;
+    }
+    /* pour le formulaire d'inscription pour costume */
+    .bleue {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* pour le formulaire en rouge (inscription_newsletter) */
+    .rouge {
+        padding: 10px 5%;
+        background-position-x: 250px;
+        background-position-y: 75px;
+    }
+    /* pour la page heros */
+    /* image superposé */
+    .img1sur1,
+    .img2sur1 {
+        display: flex;
+        justify-content: center;
+        padding: 20px 10%;
+        margin: 0px;
+    }
+    /* pour les images rond dans heros */
+    .herospart2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .imgrond1 {
+        display: none;
+    }
+    .imgrond2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .imgrond2 img {
+        width: 100%;
+    }
+    .apparait {
+        display: block;
+    }
+    .disparait1 {
+        display: none;
+    }
+    /* pour le footer */
+    .footer1 {
+        text-align: left;
+    }
+    .mobile_sayna {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
